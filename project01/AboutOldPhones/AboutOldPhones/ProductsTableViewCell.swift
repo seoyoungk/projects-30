@@ -17,6 +17,7 @@ class ProductsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        imgView.contentMode = UIView.ContentMode.scaleAspectFill
         imgView.layer.cornerRadius = 50.0
         imgView.layer.masksToBounds = true
     }

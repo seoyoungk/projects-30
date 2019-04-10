@@ -18,7 +18,7 @@ class ProductsTableViewController: UITableViewController {
         let img1 = ["image": "image-cell1", "info": "1907 Wall Set", "full screen": "phone-fullscreen1"]
         let img2 = ["image": "image-cell2", "info": "1921 Dial Phone", "full screen": "phone-fullscreen2"]
         let img3 = ["image": "image-cell3", "info": "1937 Desk Set", "full screen": "phone-fullscreen3"]
-        let img4 = ["image": "image-cell4", "info": "11984 Moto Portable", "full screen": "phone-fullscreen4"]
+        let img4 = ["image": "image-cell4", "info": "1984 Moto Portable", "full screen": "phone-fullscreen4"]
         
         productlist = [img1, img2, img3, img4]
         
@@ -26,10 +26,10 @@ class ProductsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return productlist.count
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//
+//        return productlist.count
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -49,8 +49,9 @@ class ProductsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            (segue.destination as! DetailViewController).detaildata = dicTemp[tableView.indexPathForSelectedRow!.row]
+            (segue.destination as! DetailViewController).detaildata = productlist[tableView.indexPathForSelectedRow!.row]
         }
     }
     
 }
+
