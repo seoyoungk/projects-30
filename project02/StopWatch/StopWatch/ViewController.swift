@@ -69,13 +69,11 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     @objc func mainUpdateTimer() {      //main Timer 업데이트 !!
-        mainStopWatch.count += 0.01
-        timerLabel.text = String(format: "%.2f", mainStopWatch.count)
+        Timers(mainStopWatch, label: timerLabel)
     }
     
     @objc func lapUpdateTimer() {
-        lapStopWatch.count += 0.01
-        lapTimerLabel.text = String(format: "%.2f", lapStopWatch.count)
+        Timers(lapStopWatch, label: lapTimerLabel)
         
     }
     
@@ -94,6 +92,24 @@ class ViewController: UIViewController, UITableViewDataSource {
         lapTimerLabel.text = "00:00:00"
     }
     
+    
+    func Timers(_ stopwatch: StopWatch, label: UILabel) {
+        stopwatch.count += 0.01 // timer update interval
+        
+        var minute: String = "\((Int)(stopwatch.count / 60))"
+        if (Int)(stopwatch.count / 60) < 10 {
+            minute = "0\((Int)(stopwatch.count / 60))"
+        }
+        
+        var second: String = String(format: "%.2f", (stopwatch.count.truncatingRemainder(dividingBy: 60)))
+        if stopwatch.count.truncatingRemainder(dividingBy: 60) < 10 {
+            second = "0" + second
+        }
+        
+        label.text = minute + ":" + second  // 00:00:00
+    }
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lap.count
     }
@@ -101,8 +117,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
+        if let lapCountLabel = cell.viewWithTag(1) as? UILabel {
+            lapCountLabel.text = "Lap \(lap.count - (indexPath as NSIndexPath).row)"
+        }
+        if let timerCountLabel = cell.viewWithTag(2) as? UILabel {
+            timerCountLabel.text = lap[lap.count - (indexPath as NSIndexPath).row - 1]
+        }
+        
         return cell
     }
-    
 }
 
