@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Memo
+//  TodoList
 //
-//  Created by Seoyoung on 17/04/2019.
+//  Created by Seoyoung on 12/04/2019.
 //  Copyright © 2019 Seoyoung. All rights reserved.
 //
 
