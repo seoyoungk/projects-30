@@ -40,7 +40,7 @@ class FBViewController: FBBaseViewController{
         tableView.dataSource = self
         view.addSubview(tableView)
         
-        // Set layout for tableView.
+        // tableview layout
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[tableView]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["tableView": tableView]))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[tableView]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["tableView": tableView]))
