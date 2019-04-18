@@ -24,7 +24,7 @@ public struct TableKeys{
                 TableKeys.rows: [
                     [TableKeys.imageName: user.nickName, TableKeys.title: user.name, TableKeys.subTitle: "View your profile"]
                 ]
-            ],
+            ], 
             [
                 TableKeys.rows: [
                     [TableKeys.imageName: Specs.imageList.friends, TableKeys.title: "Friends"],

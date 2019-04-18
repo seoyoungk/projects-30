@@ -11,7 +11,7 @@ import UIKit
 class FBUser {
     var name: String
     var nickName: String
-    var education: String
+    var education: String 
     
     init(name: String, nickName: String = "seoyoung", education: String){
     self.name = name

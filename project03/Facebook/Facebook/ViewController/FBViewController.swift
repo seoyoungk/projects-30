@@ -8,23 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FBViewController: FBBaseViewController{
     
     typealias RowModel = [String: String]
     
-    public var user: FBUser {
+    fileprivate var user: FBUser {
         get {
             return FBUser(name: "seoyoung", education: "CMU")
         }
     }
     
-    public var tableViewDataSource: [[String: Any]]{
-        get{
+    fileprivate var tableViewDataSource: [[String: Any]] {
+        get {
             return TableKeys.populate(user)
         }
     }
     
-    public let tableView: UITableView = {
+    private let tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .grouped)
         view.register(FBTableViewCell.self, forCellReuseIdentifier: FBTableViewCell.identifier)
         return view
@@ -33,28 +33,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "FaceBook"
+        title = "Facebook"
         navigationController?.navigationBar.barTintColor = Specs.color.tint
         
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
         
+        // Set layout for tableView.
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[tableView]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["tableView": tableView]))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[tableView]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["tableView": tableView]))
     }
     
-    public func rows(at section: Int) -> [Any] {
+    fileprivate func rows(at section: Int) -> [Any] {
         return tableViewDataSource[section][TableKeys.rows] as! [Any]
     }
     
-    public func title(at section: Int) -> String? {
+    fileprivate func title(at section: Int) -> String? {
         return tableViewDataSource[section][TableKeys.section] as? String
     }
     
-    public func rowModel(at indexPath: IndexPath) -> RowModel {
+    fileprivate func rowModel(at indexPath: IndexPath) -> RowModel {
         return rows(at: indexPath.section)[indexPath.row] as! RowModel
+    }
+}
+
+extension FBViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return tableViewDataSource.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,9 +73,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let modelForRow = rowModel(at: indexPath)
         var cell = UITableViewCell()
         
-        let modelForRow = rowModel(at: indexPath)
+        guard let title = modelForRow[TableKeys.title] else {
+            return cell
+        }
         
         if title == user.name {
             cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: nil)
@@ -87,11 +97,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if title == user.name {
             cell.detailTextLabel?.text = modelForRow[TableKeys.subTitle]
         }
-        
+         
         return cell
-        
     }
-    
+}
+
+extension FBViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let modelForRow = rowModel(at: indexPath)
         

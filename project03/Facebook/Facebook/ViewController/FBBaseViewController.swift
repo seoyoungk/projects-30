@@ -12,10 +12,8 @@ class FBBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = Specs.color.gray
     }
     
-
 
 }

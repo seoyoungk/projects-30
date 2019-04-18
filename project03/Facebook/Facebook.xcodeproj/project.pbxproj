@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DE2544D225F1711008A4702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2544C225F1711008A4702 /* AppDelegate.swift */; };
-		1DE2544F225F1711008A4702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2544E225F1711008A4702 /* ViewController.swift */; };
+		1DE2544F225F1711008A4702 /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2544E225F1711008A4702 /* FBViewController.swift */; };
 		1DE25454225F1712008A4702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE25453225F1712008A4702 /* Assets.xcassets */; };
 		1DE25457225F1712008A4702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE25455225F1712008A4702 /* LaunchScreen.storyboard */; };
 		1DE25464225F1C35008A4702 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE25463225F1C35008A4702 /* Specs.swift */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		1DE25449225F1711008A4702 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE2544C225F1711008A4702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DE2544E225F1711008A4702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DE2544E225F1711008A4702 /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		1DE25453225F1712008A4702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE25456225F1712008A4702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DE25458225F1712008A4702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		1DE25460225F1B08008A4702 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1DE2544E225F1711008A4702 /* ViewController.swift */,
+				1DE2544E225F1711008A4702 /* FBViewController.swift */,
 				1DE2546B22606B9C008A4702 /* FBBaseViewController.swift */,
 			);
 			path = ViewController;
@@ -187,7 +187,7 @@
 				1DE2546E22606BF0008A4702 /* FBTableViewCell.swift in Sources */,
 				1DE2546822606146008A4702 /* TableKeys.swift in Sources */,
 				1DE254662260553C008A4702 /* UIColor.swift in Sources */,
-				1DE2544F225F1711008A4702 /* ViewController.swift in Sources */,
+				1DE2544F225F1711008A4702 /* FBViewController.swift in Sources */,
 				1DE2544D225F1711008A4702 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

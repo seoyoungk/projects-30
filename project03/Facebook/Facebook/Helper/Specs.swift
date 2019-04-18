@@ -6,12 +6,11 @@
 //  Copyright © 2019 Seoyoung. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public struct Specs {
     public struct Color {
-        public let tint = UIColor(hex: 0x3b5998)
+        public let tint = UIColor(hex: 0x3b5998) 
         public let red = UIColor.red
         public let green = UIColor.green
         public let blue = UIColor.blue
