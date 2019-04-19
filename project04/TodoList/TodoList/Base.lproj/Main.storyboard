@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="todoCell" rowHeight="83" id="XZd-rJ-zuM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="todoCell" rowHeight="83" id="XZd-rJ-zuM" customClass="TodoCell" customModule="TodoList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XZd-rJ-zuM" id="EBS-2J-0Ak">
@@ -66,6 +66,12 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="wLy-wr-iNs" id="kPz-DG-cwz"/>
+                                            <outlet property="img" destination="mwa-kT-sNm" id="QVc-3k-a9H"/>
+                                            <outlet property="titleLabel" destination="5ls-3d-Kc6" id="MvP-3p-OG3"/>
+                                            <segue destination="Vy2-5T-bQP" kind="show" identifier="segue_detail" id="Ea1-O8-Gxv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -74,7 +80,11 @@
                         <viewLayoutGuide key="safeArea" id="mwZ-QE-pq4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Todo List" id="OrF-Rw-hTk">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2xa-dd-7qz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2xa-dd-7qz">
+                            <connections>
+                                <segue destination="Vy2-5T-bQP" kind="show" identifier="segue_detail" id="DvF-DN-ZTm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="todoTableView" destination="j8q-WK-RUD" id="B4n-RM-ghm"/>
@@ -84,5 +94,101 @@
             </objects>
             <point key="canvasLocation" x="264.80000000000001" y="102.70935960591133"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="cek-yO-FIu">
+            <objects>
+                <viewController id="Vy2-5T-bQP" customClass="DetailViewController" customModule="TodoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IVm-Uo-14X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar8-4Y-0xO">
+                                <rect key="frame" x="44" y="152" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="child"/>
+                                <connections>
+                                    <action selector="selectChild:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="L43-gN-6ta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-nL-vH3">
+                                <rect key="frame" x="124" y="152" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="phone"/>
+                                <connections>
+                                    <action selector="selectPhone:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="cGI-kr-dAt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bB-7s-aS1">
+                                <rect key="frame" x="204" y="152" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="shopping-cart"/>
+                                <connections>
+                                    <action selector="selectShopping:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="KSD-bf-a7X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J50-7D-K9i">
+                                <rect key="frame" x="281" y="152" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="travel"/>
+                                <connections>
+                                    <action selector="selectTravel:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="riS-iR-8jA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Todo Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OG2-ST-MrH">
+                                <rect key="frame" x="44" y="261" width="87" height="26"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mA8-wX-c7A">
+                                <rect key="frame" x="139" y="257" width="192" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-0v-lOd">
+                                <rect key="frame" x="0.0" y="349" width="375" height="199"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="577379810.61333203">
+                                    <!--2019-04-19 15:16:50 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-4N-Hj3">
+                                <rect key="frame" x="166" y="627" width="46" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="tapDone:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="qYh-mS-tOB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AXw-cr-7bi"/>
+                    </view>
+                    <connections>
+                        <outlet property="childButton" destination="Ar8-4Y-0xO" id="CG7-aH-CjT"/>
+                        <outlet property="phoneButton" destination="gFl-nL-vH3" id="YEG-Qn-fkV"/>
+                        <outlet property="shoppingButton" destination="9bB-7s-aS1" id="O4P-Tm-AhH"/>
+                        <outlet property="todoDatePicker" destination="Xho-0v-lOd" id="ANq-yR-eRI"/>
+                        <outlet property="todoTextField" destination="mA8-wX-c7A" id="hIl-KT-tJ3"/>
+                        <outlet property="travelButton" destination="J50-7D-K9i" id="zKB-fK-xbi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSC-TI-waa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.20000000000005" y="103.44827586206897"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="child" width="50" height="50"/>
+        <image name="phone" width="50" height="50"/>
+        <image name="shopping-cart" width="50" height="50"/>
+        <image name="travel" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DvF-DN-ZTm"/>
+    </inferredMetricsTieBreakers>
 </document>

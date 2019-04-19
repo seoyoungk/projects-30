@@ -28,17 +28,22 @@ class ViewController: UIViewController {
         todoTableView.reloadData()
     }
     
-    func setTableViewCell(_ cell: UITableViewCell, todo: TodoItem){
-        let imageView: UIImageView = cell.viewWithTag(101) as! UIImageView
-        let titleLabel: UILabel = cell.viewWithTag(102) as! UILabel
-        let dateLabel: UILabel = cell.viewWithTag(103) as! UILabel
+//    func setTableViewCell(_ cell: UITableViewCell, todo: TodoItem){
+//        let imageView: UIImageView = cell.viewWithTag(101) as! UIImageView
+//        let titleLabel: UILabel = cell.viewWithTag(102) as! UILabel
+//        let dateLabel: UILabel = cell.viewWithTag(103) as! UILabel
+//
+//        imageView.image = UIImage(named: todo.image)
+//        titleLabel.text = todo.title
+//        dateLabel.text = stringFromDate(todo.date) // label.text에 string값으로 변환해서 넣어줌
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_detail"{
+            (segue.destination as! DetailViewController).todo = todos[todoTableView.indexPathForSelectedRow!.row]
+        }
         
-        imageView.image = UIImage(named: todo.image)
-        titleLabel.text = todo.title
-        dateLabel.text = stringFromDate(todo.date) // label.text에 string값으로 변환해서 넣어줌
     }
-    
-    
 
 }
 
@@ -48,11 +53,13 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
-        setTableViewCell(cell, todo: todos[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath) as! TodoCell
+        let path = todos[indexPath.row]
+        cell.img.image = UIImage(named: path.image)
+        cell.titleLabel.text = path.title
+        cell.dateLabel.text = stringFromDate(path.date)
         return cell
     }
-    
     
 }
 
