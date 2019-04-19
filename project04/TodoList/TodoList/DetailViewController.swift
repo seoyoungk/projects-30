@@ -45,22 +45,22 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func selectChild(_ sender: Any) {
+    @IBAction func selectChild(_ sender: AnyObject) {
         resetButton()
         childButton.isSelected = true
     }
     
-    @IBAction func selectPhone(_ sender: Any) {
+    @IBAction func selectPhone(_ sender: AnyObject) {
         resetButton()
         phoneButton.isSelected = true
     }
     
-    @IBAction func selectShopping(_ sender: Any) {
+    @IBAction func selectShopping(_ sender: AnyObject) {
         resetButton()
         shoppingButton.isSelected = true
     }
 
-    @IBAction func selectTravel(_ sender: Any) {
+    @IBAction func selectTravel(_ sender: AnyObject) {
         resetButton()
         travelButton.isSelected = true
     }
@@ -72,7 +72,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         travelButton.isSelected = false
     }
     
-    @IBAction func tapDone(_ sender: Any) {
+    @IBAction func tapDone(_ sender: AnyObject) {
         var image = ""
         if childButton.isSelected {
             image = "child-selected"
@@ -92,12 +92,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             todo = TodoItem(id: uuid, title: todoTextField.text!, date: todoDatePicker.date, image: image)
             todos.append(todo!)
         }
+         let _ = navigationController?.popToRootViewController(animated: true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

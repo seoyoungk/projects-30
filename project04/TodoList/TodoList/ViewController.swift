@@ -39,8 +39,11 @@ class ViewController: UIViewController {
 //    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue_detail"{
-            (segue.destination as! DetailViewController).todo = todos[todoTableView.indexPathForSelectedRow!.row]
+        if segue.identifier == "segue_detail" {
+            let indexPath = todoTableView.indexPathForSelectedRow
+            if let indexPath = indexPath {
+            (segue.destination as! DetailViewController).todo = todos[(indexPath as NSIndexPath).row]
+            }
         }
         
     }
@@ -54,7 +57,7 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath) as! TodoCell
-        let path = todos[indexPath.row]
+        let path = todos[(indexPath as NSIndexPath).row]
         cell.img.image = UIImage(named: path.image)
         cell.titleLabel.text = path.title
         cell.dateLabel.text = stringFromDate(path.date)
@@ -73,7 +76,7 @@ extension ViewController: UITableViewDelegate {
     // Cell delete
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
-            todos.remove(at: indexPath.row)
+            todos.remove(at: (indexPath as NSIndexPath).row)
             todoTableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
         }
     }
@@ -84,8 +87,8 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let todo = todos.remove(at: sourceIndexPath.row)
-        todos.insert(todo, at: destinationIndexPath.row)
+        let todo = todos.remove(at: (sourceIndexPath as NSIndexPath).row)
+        todos.insert(todo, at: (destinationIndexPath as NSIndexPath).row)
     }
 }
 
