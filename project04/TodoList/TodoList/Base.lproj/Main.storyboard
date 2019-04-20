@@ -70,7 +70,7 @@
                                             <outlet property="dateLabel" destination="wLy-wr-iNs" id="kPz-DG-cwz"/>
                                             <outlet property="img" destination="mwa-kT-sNm" id="QVc-3k-a9H"/>
                                             <outlet property="titleLabel" destination="5ls-3d-Kc6" id="MvP-3p-OG3"/>
-                                            <segue destination="Vy2-5T-bQP" kind="show" identifier="segue_detail" id="Ea1-O8-Gxv"/>
+                                            <segue destination="Vy2-5T-bQP" kind="show" identifier="editTodo" id="Ea1-O8-Gxv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -82,7 +82,7 @@
                     <navigationItem key="navigationItem" title="Todo List" id="OrF-Rw-hTk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2xa-dd-7qz">
                             <connections>
-                                <segue destination="Vy2-5T-bQP" kind="show" identifier="segue_detail" id="DvF-DN-ZTm"/>
+                                <segue destination="Vy2-5T-bQP" kind="show" identifier="addTodo" id="DvF-DN-ZTm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 //    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue_detail" {
+        if segue.identifier == "editTodo" {
             let indexPath = todoTableView.indexPathForSelectedRow
             if let indexPath = indexPath {
             (segue.destination as! DetailViewController).todo = todos[(indexPath as NSIndexPath).row]

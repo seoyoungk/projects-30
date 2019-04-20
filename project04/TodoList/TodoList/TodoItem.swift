@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TodoItem {
+class TodoItem: NSObject {
     var id: String
     var title: String
     var date: Date
