@@ -19,6 +19,9 @@ class NewsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
         tableView.estimatedRowHeight = 140
         tableView.rowHeight = UITableView.automaticDimension
         
