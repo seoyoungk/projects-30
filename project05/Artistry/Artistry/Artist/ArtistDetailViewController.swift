@@ -16,10 +16,13 @@ class ArtistDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
         
         title = selectedArtist.name
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 300
+        
+//        tableView.estimatedRowHeight = 300
+//        tableView.rowHeight = UITableView.automaticDimension
         
         NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: .none, queue: OperationQueue.main) { [weak self] _ in
             self?.tableView.reloadData()

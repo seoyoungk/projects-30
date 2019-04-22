@@ -42,7 +42,7 @@ struct Artist {
                 let bio = artistObject["bio"] as? String,
                 let imageName = artistObject["image"] as? String,
                 let image = UIImage(named: imageName),
-                let worksObject = artistObject["work"] as? [[String: String]] {
+                let worksObject = artistObject["works"] as? [[String: String]] {
                 
                 var works  = [Work]()
                 

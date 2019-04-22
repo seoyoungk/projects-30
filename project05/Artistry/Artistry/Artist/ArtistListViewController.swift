@@ -13,14 +13,17 @@ class ArtistListViewController: UIViewController {
     let artists = Artist.artistFromBundle()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.dataSource = self
+        
         // cell row 자동 확장
-        tableView.estimatedRowHeight = 140
-        tableView.rowHeight = UITableView.automaticDimension
+//        self.tableView.estimatedRowHeight = 165
+//        self.tableView.rowHeight = UITableView.automaticDimension
         
         NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: .none, queue: OperationQueue.main) { [weak self] _ in
             self?.tableView.reloadData()
         }
     }
+   
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ArtistDetailViewController,

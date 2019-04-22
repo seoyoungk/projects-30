@@ -11,13 +11,13 @@
 		1D31A7A8226AEA28007F5D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D31A7A6226AEA28007F5D36 /* Main.storyboard */; };
 		1D31A7AA226AEA29007F5D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D31A7A9226AEA29007F5D36 /* Assets.xcassets */; };
 		1D31A7AD226AEA29007F5D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D31A7AB226AEA29007F5D36 /* LaunchScreen.storyboard */; };
-		1D31A7B6226AEABF007F5D36 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D31A7B5226AEABF007F5D36 /* artists.json */; };
 		1D31A7B8226AED4B007F5D36 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D31A7B7226AED4B007F5D36 /* ArtistListViewController.swift */; };
 		1D31A7BA226AED72007F5D36 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D31A7B9226AED72007F5D36 /* ArtistTableViewCell.swift */; };
 		1D31A7BC226AEEAD007F5D36 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D31A7BB226AEEAD007F5D36 /* Artist.swift */; };
 		1D31A7C0226AF365007F5D36 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D31A7BF226AF365007F5D36 /* Work.swift */; };
 		1D31A7C2226AFE7F007F5D36 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D31A7C1226AFE7F007F5D36 /* WorkTableViewCell.swift */; };
 		1D31A7C4226AFF21007F5D36 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D31A7C3226AFF21007F5D36 /* ArtistDetailViewController.swift */; };
+		1D31AF8E226D9CA7007F5D36 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D31AF8D226D9CA7007F5D36 /* artists.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		1D31A7A9226AEA29007F5D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D31A7AC226AEA29007F5D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D31A7AE226AEA29007F5D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D31A7B5226AEABF007F5D36 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = artists.json; path = "../../../../../Swift-30-Projects/Project 05 - Artistry/Artistry/artists.json"; sourceTree = "<group>"; };
 		1D31A7B7226AED4B007F5D36 /* ArtistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		1D31A7B9226AED72007F5D36 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		1D31A7BB226AEEAD007F5D36 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		1D31A7BF226AF365007F5D36 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		1D31A7C1226AFE7F007F5D36 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 		1D31A7C3226AFF21007F5D36 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
+		1D31AF8D226D9CA7007F5D36 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		1D31A7B4226AEA94007F5D36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1D31A7B5226AEABF007F5D36 /* artists.json */,
+				1D31AF8D226D9CA7007F5D36 /* artists.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			files = (
 				1D31A7AD226AEA29007F5D36 /* LaunchScreen.storyboard in Resources */,
 				1D31A7AA226AEA29007F5D36 /* Assets.xcassets in Resources */,
-				1D31A7B6226AEABF007F5D36 /* artists.json in Resources */,
+				1D31AF8E226D9CA7007F5D36 /* artists.json in Resources */,
 				1D31A7A8226AEA28007F5D36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
