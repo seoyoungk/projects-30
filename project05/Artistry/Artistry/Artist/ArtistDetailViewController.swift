@@ -18,7 +18,6 @@ class ArtistDetailViewController: UIViewController {
         super.viewDidLoad()
         
         title = selectedArtist.name
-        
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 300
         

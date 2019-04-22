@@ -71,7 +71,7 @@
                                             <outlet property="artistImageView" destination="kth-Vq-MhA" id="MA1-4r-o88"/>
                                             <outlet property="bioLabel" destination="Yux-ZA-1vw" id="LVg-Vt-XYN"/>
                                             <outlet property="nameLabel" destination="Kxn-14-e4U" id="2o9-iT-Jq3"/>
-                                            <segue destination="Nf2-7O-tnH" kind="show" id="lIn-s8-KNE"/>
+                                            <segue destination="Nf2-7O-tnH" kind="show" identifier="ShowArtist" id="lIn-s8-KNE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

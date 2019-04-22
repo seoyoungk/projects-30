@@ -22,6 +22,12 @@ class ArtistListViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ArtistDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            destination.selectedArtist = artists[indexPath.row]
+        }
+    }
 
 }
 
