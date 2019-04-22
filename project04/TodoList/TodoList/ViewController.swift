@@ -26,6 +26,10 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         todoTableView.reloadData()
+        
+        self.todoTableView.delegate = self
+        self.todoTableView.dataSource = self
+        
     }
     
 //    func setTableViewCell(_ cell: UITableViewCell, todo: TodoItem){

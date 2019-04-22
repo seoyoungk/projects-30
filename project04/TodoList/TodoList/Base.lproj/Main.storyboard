@@ -105,7 +105,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar8-4Y-0xO">
                                 <rect key="frame" x="44" y="152" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <state key="normal" backgroundImage="child"/>
+                                <state key="normal" image="child"/>
+                                <state key="selected" image="child-selected"/>
                                 <connections>
                                     <action selector="selectChild:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="L43-gN-6ta"/>
                                 </connections>
@@ -113,7 +114,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-nL-vH3">
                                 <rect key="frame" x="124" y="152" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <state key="normal" backgroundImage="phone"/>
+                                <state key="normal" image="phone"/>
+                                <state key="selected" image="phone-selected"/>
                                 <connections>
                                     <action selector="selectPhone:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="cGI-kr-dAt"/>
                                 </connections>
@@ -121,7 +123,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bB-7s-aS1">
                                 <rect key="frame" x="204" y="152" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <state key="normal" backgroundImage="shopping-cart"/>
+                                <state key="normal" image="shopping-cart"/>
+                                <state key="selected" image="shopping-cart-selected"/>
                                 <connections>
                                     <action selector="selectShopping:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="KSD-bf-a7X"/>
                                 </connections>
@@ -129,7 +132,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J50-7D-K9i">
                                 <rect key="frame" x="281" y="152" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <state key="normal" backgroundImage="travel"/>
+                                <state key="normal" image="travel"/>
+                                <state key="selected" image="travel-selected"/>
                                 <connections>
                                     <action selector="selectTravel:" destination="Vy2-5T-bQP" eventType="touchUpInside" id="riS-iR-8jA"/>
                                 </connections>
@@ -184,9 +188,13 @@
     </scenes>
     <resources>
         <image name="child" width="50" height="50"/>
+        <image name="child-selected" width="50" height="50"/>
         <image name="phone" width="50" height="50"/>
+        <image name="phone-selected" width="50" height="50"/>
         <image name="shopping-cart" width="50" height="50"/>
+        <image name="shopping-cart-selected" width="50" height="50"/>
         <image name="travel" width="50" height="50"/>
+        <image name="travel-selected" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DvF-DN-ZTm"/>
