@@ -9,13 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let transitionManager = TransitionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.toolbar.clipsToBounds = true
+        
     }
-    @IBAction func dismissButton(_ sender: Any) {
+    @IBAction func dismissButton(_ sender: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }
     

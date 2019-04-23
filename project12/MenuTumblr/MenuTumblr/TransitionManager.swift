@@ -50,7 +50,6 @@ extension TransitionManager: UIViewControllerAnimatedTransitioning {
         }, completion: { finished in
             transitionContext.completeTransition(true)
             UIApplication.shared.keyWindow?.addSubview(screens.to.view)
-            
         })
     }
     
@@ -89,8 +88,6 @@ extension TransitionManager: UIViewControllerAnimatedTransitioning {
         menuViewController.audioIcon.transform = self.offStage(bottomRowOffset)
         menuViewController.audioLabel.transform = self.offStage(bottomRowOffset)
         
-        
-        
     }
     
     func onStageMenuController(_ menuViewController: MenuViewController){
@@ -115,7 +112,6 @@ extension TransitionManager: UIViewControllerAnimatedTransitioning {
         
         menuViewController.audioIcon.transform = CGAffineTransform.identity
         menuViewController.audioLabel.transform = CGAffineTransform.identity
-        
     }
     
 }
