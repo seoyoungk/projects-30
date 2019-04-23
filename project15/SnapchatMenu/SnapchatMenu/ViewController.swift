@@ -22,9 +22,10 @@ class ViewController: UIViewController {
         let chatVC = UIViewController(nibName: vcName.chat.rawValue, bundle: nil)
         let storiesVC = UIViewController(nibName: vcName.stories.rawValue, bundle: nil)
         let discoverVC = UIViewController(nibName: vcName.discover.rawValue, bundle: nil)
-        add(childViewController: chatVC, toParentViewController: self)
-        add(childViewController: storiesVC, toParentViewController: self)
-        add(childViewController: discoverVC, toParentViewController: self)
+        
+        add(childViewController: chatVC, parentViewController: self)
+        add(childViewController: storiesVC, parentViewController: self)
+        add(childViewController: discoverVC, parentViewController: self)
         
         let snapView = UIImageView(image: UIImage(named: "Snap"))
         changeX(ofView: snapView, xPosition: view.frame.width)
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
         view.frame = frame
     }
     
-    fileprivate func add(childViewController: UIViewController, toParentViewController parentViewController: UIViewController) {
+    fileprivate func add(childViewController: UIViewController, parentViewController: UIViewController) {
         addChild(childViewController)
         scrollView.addSubview(childViewController.view)
         childViewController.didMove(toParent: parentViewController)
