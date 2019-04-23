@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         animateTable()
     }
+    // cell animation!!
     func animateTable() {
         masterTableView.reloadData()
         
@@ -43,7 +44,11 @@ class ViewController: UIViewController {
             index += 1
         }
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "animate_detail" {
+            (segue.destination as! DetailViewController).barTitle =  items[masterTableView.indexPathForSelectedRow!.row]
+        }
+    }
 }
 
 extension ViewController: UITableViewDataSource {

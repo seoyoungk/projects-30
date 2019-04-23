@@ -30,6 +30,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wlc-ml-Z9x" kind="show" identifier="animate_detail" id="uoG-hu-aMp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -49,6 +52,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="166.99507389162562"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="8ok-IQ-nfZ">
+            <objects>
+                <viewController id="wlc-ml-Z9x" customClass="DetailViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8w-DA-QCc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK6-RW-9vE">
+                                <rect key="frame" x="143" y="641" width="88" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="6ST-Sa-ka2"/>
+                                    <constraint firstAttribute="height" constant="40" id="l4e-nR-sIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="didTapAnimate:" destination="wlc-ml-Z9x" eventType="touchUpInside" id="RXG-1u-eop"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gK6-RW-9vE" firstAttribute="top" secondItem="Fov-Zi-T6C" secondAttribute="top" constant="553" id="32p-hh-OlK"/>
+                            <constraint firstItem="Fov-Zi-T6C" firstAttribute="bottom" secondItem="gK6-RW-9vE" secondAttribute="bottom" constant="97" id="B0I-S0-8Zb"/>
+                            <constraint firstItem="gK6-RW-9vE" firstAttribute="leading" secondItem="Fov-Zi-T6C" secondAttribute="leading" constant="143" id="bPJ-dh-t75"/>
+                            <constraint firstItem="Fov-Zi-T6C" firstAttribute="trailing" secondItem="gK6-RW-9vE" secondAttribute="trailing" constant="144" id="yzc-lI-h3Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fov-Zi-T6C"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsn-xM-HZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="63y-Q1-Jwk">
