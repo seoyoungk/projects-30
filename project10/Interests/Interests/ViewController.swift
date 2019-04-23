@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.collectionView.dataSource = self
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -40,7 +40,7 @@ extension ViewController: UICollectionViewDataSource {
     
 }
 
-extension ViewController: UICollectionViewDelegate {
+extension ViewController: UIScrollViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         let cellWidthWithSpace = layout.itemSize.width + layout.minimumLineSpacing
@@ -48,8 +48,8 @@ extension ViewController: UICollectionViewDelegate {
         var offset = targetContentOffset.pointee
         
         let index = (offset.x + scrollView.contentInset.left) / cellWidthWithSpace
-        let roundIndex = round(index)
+        let roundedIndex = round(index)
         
-        offset = CGPoint(x: roundIndex * cellWidthWithSpace - scrollView.contentInset.left, y: -scrollView.contentInset.top)
+        offset = CGPoint(x: roundedIndex * cellWidthWithSpace - scrollView.contentInset.left, y: -scrollView.contentInset.top)
     }
 }
