@@ -24,7 +24,7 @@ class PhotoRecord {
     }
 }
 
-// 
+//
 class PendingOperation {
     lazy var downloadInProgress = [IndexPath: Operation]()
     lazy var downloadQueue: OperationQueue = {
@@ -49,7 +49,7 @@ class ImageDownloader: Operation {
     init(photoRecord: PhotoRecord){
         self.photoRecord = photoRecord
     }
-    
+    /// Main is the function actually perform work.
     override func main() {
         if isCancelled {
             return

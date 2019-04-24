@@ -9,7 +9,7 @@
 import UIKit
 import CoreImage
 
-let dataSourceURL = URL(string: "http://www.raywenderlich.com/downloads/ClassicPhotosDictionary.plist")
+let dataSourceURL = URL(string:"http://www.raywenderlich.com/downloads/ClassicPhotosDictionary.plist")
 
 class PhotoTableViewController: UITableViewController {
     var photos = [PhotoRecord]()
@@ -18,8 +18,8 @@ class PhotoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+//        self.tableView.delegate = self
+//        self.tableView.dataSource = self
         
         self.title = "Classic Photos"
         fetchPhotoDetails()
@@ -33,6 +33,7 @@ class PhotoTableViewController: UITableViewController {
             if let error = error {
                 let alert = UIAlertController(title: "Error!", message: error.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(alert, animated: false)
                 return
             }
             if let data = data {

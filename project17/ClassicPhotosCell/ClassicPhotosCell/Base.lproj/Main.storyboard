@@ -12,7 +12,7 @@
         <!--Classic Photos-->
         <scene sceneID="v32-v7-AnA">
             <objects>
-                <tableViewController id="4q0-89-dBz" sceneMemberID="viewController">
+                <tableViewController id="4q0-89-dBz" customClass="PhotoTableViewController" customModule="ClassicPhotosCell" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Xw-LQ-ysy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
