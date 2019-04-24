@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpotifyVideoSignIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="caZ-cp-8Lk">
+                                <rect key="frame" x="75" y="119" width="225" height="81"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-qu-2gq">
+                                <rect key="frame" x="0.0" y="732" width="185" height="80"/>
+                                <color key="backgroundColor" red="0.19057440214063506" green="0.19315694465792677" blue="0.20637690355329952" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="SrB-70-EdQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNY-k6-UCG">
+                                <rect key="frame" x="187" y="732" width="188" height="80"/>
+                                <color key="backgroundColor" red="0.63415079337969549" green="0.59272466984404848" blue="0.20995763823662342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GTR-Wu-isV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ET1-qu-2gq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3R0-Za-B3w"/>
+                            <constraint firstAttribute="bottom" secondItem="caZ-cp-8Lk" secondAttribute="bottom" constant="612" id="5Oa-nk-wgE"/>
+                            <constraint firstAttribute="bottom" secondItem="ET1-qu-2gq" secondAttribute="bottom" id="CLp-fH-QaK"/>
+                            <constraint firstItem="ET1-qu-2gq" firstAttribute="width" secondItem="FNY-k6-UCG" secondAttribute="width" id="IcU-Tk-8P2"/>
+                            <constraint firstAttribute="bottom" secondItem="FNY-k6-UCG" secondAttribute="bottom" id="TOA-9T-thy"/>
+                            <constraint firstItem="caZ-cp-8Lk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="134" id="UJD-Pe-Uxv"/>
+                            <constraint firstAttribute="trailing" secondItem="FNY-k6-UCG" secondAttribute="trailing" id="Yqf-SA-x0f"/>
+                            <constraint firstItem="caZ-cp-8Lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="75" id="a0I-QF-WLo"/>
+                            <constraint firstAttribute="trailing" secondItem="caZ-cp-8Lk" secondAttribute="trailing" constant="75" id="c4h-gt-T5W"/>
+                            <constraint firstItem="FNY-k6-UCG" firstAttribute="leading" secondItem="ET1-qu-2gq" secondAttribute="trailing" constant="2" id="q2T-DD-aW0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>

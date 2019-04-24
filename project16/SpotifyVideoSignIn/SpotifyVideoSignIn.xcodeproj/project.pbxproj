@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DFBD6DD226F46A4007E6AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD6DC226F46A4007E6AA1 /* AppDelegate.swift */; };
+		1DFBD6DF226F46A4007E6AA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD6DE226F46A4007E6AA1 /* ViewController.swift */; };
+		1DFBD6E2226F46A4007E6AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBD6E0226F46A4007E6AA1 /* Main.storyboard */; };
+		1DFBD6E4226F46A5007E6AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBD6E3226F46A5007E6AA1 /* Assets.xcassets */; };
+		1DFBD6E7226F46A5007E6AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBD6E5226F46A5007E6AA1 /* LaunchScreen.storyboard */; };
+		1DFBD6EF227012F6007E6AA1 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1DFBD6EE227012F6007E6AA1 /* moments.mp4 */; };
+		1DFBD6F122701838007E6AA1 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD6F022701838007E6AA1 /* VideoCutter.swift */; };
+		1DFBD6F322701E84007E6AA1 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD6F222701E84007E6AA1 /* VideoSplashViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DFBD6D9226F46A4007E6AA1 /* SpotifyVideoSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyVideoSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFBD6DC226F46A4007E6AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DFBD6DE226F46A4007E6AA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DFBD6E1226F46A4007E6AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DFBD6E3226F46A5007E6AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DFBD6E6226F46A5007E6AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DFBD6E8226F46A5007E6AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFBD6EE227012F6007E6AA1 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		1DFBD6F022701838007E6AA1 /* VideoCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		1DFBD6F222701E84007E6AA1 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DFBD6D6226F46A4007E6AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DFBD6D0226F46A4007E6AA1 = {
+			isa = PBXGroup;
+			children = (
+				1DFBD6DB226F46A4007E6AA1 /* SpotifyVideoSignIn */,
+				1DFBD6DA226F46A4007E6AA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DFBD6DA226F46A4007E6AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DFBD6D9226F46A4007E6AA1 /* SpotifyVideoSignIn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DFBD6DB226F46A4007E6AA1 /* SpotifyVideoSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				1DFBD6EE227012F6007E6AA1 /* moments.mp4 */,
+				1DFBD6DC226F46A4007E6AA1 /* AppDelegate.swift */,
+				1DFBD6DE226F46A4007E6AA1 /* ViewController.swift */,
+				1DFBD6F022701838007E6AA1 /* VideoCutter.swift */,
+				1DFBD6F222701E84007E6AA1 /* VideoSplashViewController.swift */,
+				1DFBD6E0226F46A4007E6AA1 /* Main.storyboard */,
+				1DFBD6E3226F46A5007E6AA1 /* Assets.xcassets */,
+				1DFBD6E5226F46A5007E6AA1 /* LaunchScreen.storyboard */,
+				1DFBD6E8226F46A5007E6AA1 /* Info.plist */,
+			);
+			path = SpotifyVideoSignIn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DFBD6D8226F46A4007E6AA1 /* SpotifyVideoSignIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DFBD6EB226F46A5007E6AA1 /* Build configuration list for PBXNativeTarget "SpotifyVideoSignIn" */;
+			buildPhases = (
+				1DFBD6D5226F46A4007E6AA1 /* Sources */,
+				1DFBD6D6226F46A4007E6AA1 /* Frameworks */,
+				1DFBD6D7226F46A4007E6AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotifyVideoSignIn;
+			productName = SpotifyVideoSignIn;
+			productReference = 1DFBD6D9226F46A4007E6AA1 /* SpotifyVideoSignIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DFBD6D1226F46A4007E6AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Seoyoung;
+				TargetAttributes = {
+					1DFBD6D8226F46A4007E6AA1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1DFBD6D4226F46A4007E6AA1 /* Build configuration list for PBXProject "SpotifyVideoSignIn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DFBD6D0226F46A4007E6AA1;
+			productRefGroup = 1DFBD6DA226F46A4007E6AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DFBD6D8226F46A4007E6AA1 /* SpotifyVideoSignIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DFBD6D7226F46A4007E6AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFBD6E7226F46A5007E6AA1 /* LaunchScreen.storyboard in Resources */,
+				1DFBD6EF227012F6007E6AA1 /* moments.mp4 in Resources */,
+				1DFBD6E4226F46A5007E6AA1 /* Assets.xcassets in Resources */,
+				1DFBD6E2226F46A4007E6AA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DFBD6D5226F46A4007E6AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFBD6F122701838007E6AA1 /* VideoCutter.swift in Sources */,
+				1DFBD6DF226F46A4007E6AA1 /* ViewController.swift in Sources */,
+				1DFBD6DD226F46A4007E6AA1 /* AppDelegate.swift in Sources */,
+				1DFBD6F322701E84007E6AA1 /* VideoSplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DFBD6E0226F46A4007E6AA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DFBD6E1226F46A4007E6AA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DFBD6E5226F46A5007E6AA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DFBD6E6226F46A5007E6AA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DFBD6E9226F46A5007E6AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DFBD6EA226F46A5007E6AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DFBD6EC226F46A5007E6AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SpotifyVideoSignIn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seoyoung.SpotifyVideoSignIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DFBD6ED226F46A5007E6AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SpotifyVideoSignIn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seoyoung.SpotifyVideoSignIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DFBD6D4226F46A4007E6AA1 /* Build configuration list for PBXProject "SpotifyVideoSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DFBD6E9226F46A5007E6AA1 /* Debug */,
+				1DFBD6EA226F46A5007E6AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DFBD6EB226F46A5007E6AA1 /* Build configuration list for PBXNativeTarget "SpotifyVideoSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DFBD6EC226F46A5007E6AA1 /* Debug */,
+				1DFBD6ED226F46A5007E6AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DFBD6D1226F46A4007E6AA1 /* Project object */;
+}
