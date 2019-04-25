@@ -117,12 +117,12 @@ class PhotoTableViewController: UITableViewController {
             cell.accessoryView = indicator
         }
         let indicator = cell.accessoryView as! UIActivityIndicatorView
-        let photoCell = photos[indexPath.row]
+        let photoDetails = photos[indexPath.row]
         
-        cell.textLabel?.text = photoCell.name
-        cell.imageView?.image = photoCell.image
+        cell.textLabel?.text = photoDetails.name
+        cell.imageView?.image = photoDetails.image
         
-        switch (photoCell.state){
+        switch (photoDetails.state){
         case .Filtered:
             indicator.stopAnimating()
         case .Failed:
@@ -131,7 +131,7 @@ class PhotoTableViewController: UITableViewController {
         case .New, .Downloaded:
             indicator.startAnimating()
             if (!tableView.isDragging && !tableView.isDecelerating) {
-                self.startOperationsForPhotoRecord(photoDetails: photoCell, indexPath: indexPath)
+                self.startOperationsForPhotoRecord(photoDetails: photoDetails, indexPath: indexPath)
             }
         }
         return cell
