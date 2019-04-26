@@ -52,8 +52,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="5nc-rP-yYX"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGz-Wd-4gL" customClass="HorizontalScrollerView" customModule="MusicAlbum" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGz-Wd-4gL" customClass="HorizontalScrollerView" customModule="MusicAlbum" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="375" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-TY-NXi">
@@ -63,15 +64,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="WGz-Wd-4gL" secondAttribute="trailing" id="G5H-JN-uAO"/>
                             <constraint firstAttribute="trailing" secondItem="l8g-CE-nZB" secondAttribute="trailing" id="GcT-Ve-73C"/>
                             <constraint firstItem="zoA-TY-NXi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jz4-zo-Hu9"/>
-                            <constraint firstItem="WGz-Wd-4gL" firstAttribute="bottom" secondItem="l8g-CE-nZB" secondAttribute="bottom" id="LFR-Rh-2lY"/>
                             <constraint firstAttribute="trailing" secondItem="zoA-TY-NXi" secondAttribute="trailing" id="Lza-5X-ixH"/>
                             <constraint firstItem="zoA-TY-NXi" firstAttribute="top" secondItem="l8g-CE-nZB" secondAttribute="top" id="PTs-pA-8Vw"/>
                             <constraint firstItem="l8g-CE-nZB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hGj-wA-00h"/>
-                            <constraint firstItem="WGz-Wd-4gL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pcn-HI-24Y"/>
-                            <constraint firstItem="WGz-Wd-4gL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="sLk-FC-LLI"/>
                             <constraint firstAttribute="bottom" secondItem="zoA-TY-NXi" secondAttribute="bottom" constant="2" id="v6F-Wy-ASh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xsz-Go-6Un"/>

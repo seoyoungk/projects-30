@@ -22,6 +22,7 @@ extension HorizontalScrollerDataSource {
     }
 }
 
+
 protocol HorizontalScrollerDelegate: class {
     
     // inform the delegate what the view at <index> has been clicked
