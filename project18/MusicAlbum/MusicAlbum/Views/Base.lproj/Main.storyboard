@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-CE-nZB">
-                                <rect key="frame" x="0.0" y="243" width="375" height="519"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-CE-nZB">
+                                <rect key="frame" x="0.0" y="248" width="375" height="515"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Mes-q2-Pck" detailTextLabel="CQM-NQ-WDH" style="IBUITableViewCellStyleValue1" id="rkB-mI-9X0">
@@ -52,26 +52,37 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="5nc-rP-yYX"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGz-Wd-4gL" customClass="HorizontalScrollerView" customModule="MusicAlbum" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="375" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-TY-NXi">
-                                <rect key="frame" x="0.0" y="761" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="761" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dHx-Pw-U6f"/>
+                                </constraints>
                                 <items/>
                             </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGz-Wd-4gL" customClass="HorizontalScrollerView" customModule="MusicAlbum" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="375" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rsy-qe-WvB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="l8g-CE-nZB" secondAttribute="trailing" id="GcT-Ve-73C"/>
-                            <constraint firstItem="zoA-TY-NXi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jz4-zo-Hu9"/>
-                            <constraint firstAttribute="trailing" secondItem="zoA-TY-NXi" secondAttribute="trailing" id="Lza-5X-ixH"/>
-                            <constraint firstItem="zoA-TY-NXi" firstAttribute="top" secondItem="l8g-CE-nZB" secondAttribute="top" id="PTs-pA-8Vw"/>
-                            <constraint firstItem="l8g-CE-nZB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hGj-wA-00h"/>
-                            <constraint firstAttribute="bottom" secondItem="zoA-TY-NXi" secondAttribute="bottom" constant="2" id="v6F-Wy-ASh"/>
+                            <constraint firstItem="WGz-Wd-4gL" firstAttribute="leading" secondItem="kpE-Ju-LNq" secondAttribute="leading" id="4xC-WZ-ev0"/>
+                            <constraint firstItem="l8g-CE-nZB" firstAttribute="trailing" secondItem="kpE-Ju-LNq" secondAttribute="trailing" id="NE4-fr-MtS"/>
+                            <constraint firstItem="zoA-TY-NXi" firstAttribute="leading" secondItem="kpE-Ju-LNq" secondAttribute="leading" id="NQl-Dg-thH"/>
+                            <constraint firstItem="l8g-CE-nZB" firstAttribute="leading" secondItem="kpE-Ju-LNq" secondAttribute="leading" id="PBV-JZ-X2Z"/>
+                            <constraint firstAttribute="bottom" secondItem="zoA-TY-NXi" secondAttribute="bottom" id="Zz7-aD-oEK"/>
+                            <constraint firstItem="kpE-Ju-LNq" firstAttribute="bottom" secondItem="l8g-CE-nZB" secondAttribute="bottom" constant="15" id="ecn-If-pRI"/>
+                            <constraint firstItem="zoA-TY-NXi" firstAttribute="trailing" secondItem="kpE-Ju-LNq" secondAttribute="trailing" id="lEh-0Z-Mcc"/>
+                            <constraint firstItem="zoA-TY-NXi" firstAttribute="top" secondItem="WGz-Wd-4gL" secondAttribute="bottom" constant="523" id="pOn-UZ-fYG"/>
+                            <constraint firstItem="l8g-CE-nZB" firstAttribute="top" secondItem="WGz-Wd-4gL" secondAttribute="bottom" constant="10" id="rUQ-YM-5ew"/>
+                            <constraint firstItem="l8g-CE-nZB" firstAttribute="top" secondItem="WGz-Wd-4gL" secondAttribute="bottom" constant="10" id="sbP-Cq-k8f"/>
+                            <constraint firstItem="WGz-Wd-4gL" firstAttribute="top" secondItem="kpE-Ju-LNq" secondAttribute="top" id="t1N-WB-qza"/>
+                            <constraint firstItem="WGz-Wd-4gL" firstAttribute="trailing" secondItem="kpE-Ju-LNq" secondAttribute="trailing" id="uRc-Lw-3pn"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xsz-Go-6Un"/>
+                        <viewLayoutGuide key="safeArea" id="kpE-Ju-LNq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pop Music" id="M4m-Pz-4CR"/>
                     <connections>
