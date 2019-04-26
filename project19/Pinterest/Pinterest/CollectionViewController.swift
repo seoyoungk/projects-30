@@ -9,15 +9,13 @@
 import UIKit
 import AVFoundation
 
-private let reuseIdentifier = "Cell"
-
 class CollectionViewController: UICollectionViewController {
 
     var photos = Photo.allPhotos()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
         if let layout = collectionView.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
         }
@@ -37,7 +35,7 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         cell.photo = photos[indexPath.item]
         return cell
     }
