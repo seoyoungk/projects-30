@@ -12,13 +12,13 @@ struct Album: Codable {
     var title: String
     var artist: String
     var genre: String
-    var coverURL: String
+    var coverUrl: String
     var year: String
 }
 
 extension Album: CustomStringConvertible {
     var description: String {
-        return "title: \(title)" + "artist: \(artist)" + "genre: \(genre)" + "coverURL: \(coverURL)" + "year: \(year)"
+        return "title: \(title)" + "artist: \(artist)" + "genre: \(genre)" + "coverUrlL: \(coverUrl)" + "year: \(year)"
     }
 }
 
