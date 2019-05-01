@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var urlField: UITextField!
@@ -17,7 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var forwardButton: UIBarButtonItem!
     @IBOutlet weak var reloadButton: UIBarButtonItem!
-   
+    
     var urlStr = "https://www.apple.com"
     
     override func viewDidLoad() {
@@ -71,7 +72,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
 }
-
 
 extension WKWebView {
     func load(_ urlString: String) {

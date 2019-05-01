@@ -68,27 +68,31 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lJ-Ay-c9L">
-                                <rect key="frame" x="0.0" y="96" width="375" height="632"/>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3r8-aB-BcI">
+                                <rect key="frame" x="0.0" y="96" width="375" height="630"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ARh-kg-m0I" firstAttribute="centerX" secondItem="Vt7-I2-Wgs" secondAttribute="centerX" id="0gs-6V-74r"/>
-                            <constraint firstItem="RWQ-Ze-STr" firstAttribute="top" secondItem="5lJ-Ay-c9L" secondAttribute="bottom" id="3fe-Gy-mnA"/>
-                            <constraint firstItem="5lJ-Ay-c9L" firstAttribute="top" secondItem="ARh-kg-m0I" secondAttribute="bottom" id="6FK-Gj-lif"/>
                             <constraint firstItem="ARh-kg-m0I" firstAttribute="top" secondItem="VNt-7c-3G3" secondAttribute="bottom" id="76z-ZK-tgq"/>
+                            <constraint firstItem="3r8-aB-BcI" firstAttribute="centerX" secondItem="Vt7-I2-Wgs" secondAttribute="centerX" id="CgD-29-7Km"/>
                             <constraint firstItem="VNt-7c-3G3" firstAttribute="leading" secondItem="Vt7-I2-Wgs" secondAttribute="leading" id="Gid-ug-s6I"/>
                             <constraint firstItem="RWQ-Ze-STr" firstAttribute="centerX" secondItem="Vt7-I2-Wgs" secondAttribute="centerX" id="ID8-uE-Mxd"/>
                             <constraint firstItem="VNt-7c-3G3" firstAttribute="centerX" secondItem="Vt7-I2-Wgs" secondAttribute="centerX" id="J3f-17-wBc"/>
+                            <constraint firstItem="3r8-aB-BcI" firstAttribute="top" secondItem="ARh-kg-m0I" secondAttribute="bottom" id="Lrb-q0-gEn"/>
                             <constraint firstItem="ARh-kg-m0I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OH8-3f-zeW"/>
-                            <constraint firstItem="5lJ-Ay-c9L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="RK9-wg-GDR"/>
-                            <constraint firstItem="5lJ-Ay-c9L" firstAttribute="centerY" secondItem="Vt7-I2-Wgs" secondAttribute="centerY" id="buR-vy-Dqk"/>
+                            <constraint firstItem="RWQ-Ze-STr" firstAttribute="top" secondItem="3r8-aB-BcI" secondAttribute="bottom" id="QOG-7d-dvo"/>
+                            <constraint firstItem="3r8-aB-BcI" firstAttribute="centerY" secondItem="Vt7-I2-Wgs" secondAttribute="centerY" id="WL7-H1-FE3"/>
                             <constraint firstItem="VNt-7c-3G3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nvl-XC-qR5"/>
                             <constraint firstItem="RWQ-Ze-STr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qyM-yu-qzI"/>
                             <constraint firstItem="Vt7-I2-Wgs" firstAttribute="top" secondItem="VNt-7c-3G3" secondAttribute="top" id="uJx-fc-lb4"/>
-                            <constraint firstItem="5lJ-Ay-c9L" firstAttribute="centerX" secondItem="Vt7-I2-Wgs" secondAttribute="centerX" id="uUS-cJ-kxh"/>
+                            <constraint firstItem="3r8-aB-BcI" firstAttribute="width" secondItem="Vt7-I2-Wgs" secondAttribute="width" id="ytS-rN-7Ln"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vt7-I2-Wgs"/>
                     </view>
@@ -99,7 +103,7 @@
                         <outlet property="progressBar" destination="ARh-kg-m0I" id="Q8r-tX-zq7"/>
                         <outlet property="reloadButton" destination="dmC-yJ-Gx4" id="RCV-VT-pPv"/>
                         <outlet property="urlField" destination="Pzr-79-sOT" id="HUZ-5L-TPQ"/>
-                        <outlet property="webView" destination="5lJ-Ay-c9L" id="hkn-yA-Tbf"/>
+                        <outlet property="webView" destination="3r8-aB-BcI" id="fRy-qf-nkr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
