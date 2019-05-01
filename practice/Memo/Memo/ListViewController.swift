@@ -50,6 +50,7 @@ class ListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // cell identifier가 없을 경우 UITableViewCell 인스턴스를 생성한다.
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
+        // cell의 line제한 풀어줌
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = list[indexPath.row]
         return cell
