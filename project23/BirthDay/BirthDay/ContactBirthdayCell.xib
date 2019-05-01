@@ -66,10 +66,6 @@
                 <outlet property="email" destination="zp7-Ka-Zyr" id="rYx-AU-k2L"/>
                 <outlet property="fullName" destination="IL1-2K-CCw" id="Mwj-jn-ECg"/>
                 <outlet property="img" destination="oo7-cM-mPH" id="oXp-0n-kBx"/>
-                <outlet property="imgContactImage" destination="oo7-cM-mPH" id="jWt-RT-xva"/>
-                <outlet property="lblBirthday" destination="AiX-ml-WcQ" id="IQA-Qz-uiV"/>
-                <outlet property="lblEmail" destination="zp7-Ka-Zyr" id="dKt-jv-nHr"/>
-                <outlet property="lblFullname" destination="IL1-2K-CCw" id="MeT-WS-5yZ"/>
             </connections>
             <point key="canvasLocation" x="444" y="366"/>
         </tableViewCell>
