@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var scene: UIImageView!
     @IBOutlet weak var answerLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let image = UIImage(named: "train_night") else {
-            fatalError("no starting image!")
+            fatalError("no starting image")
         }
+        
         scene.image = image
     }
     
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // didFinishPickingMediaWithInfo info: [String : Any] 에서 String을 UIImagePickerController.InfoKey로 설정
+        // didFinishPickingMediaWithInfo info: [String : Any] 에서 String을 UIImagePickerController.InfoKey로 설ㅈ
         dismiss(animated: true)
         
         guard let image = info[.originalImage] as? UIImage else {

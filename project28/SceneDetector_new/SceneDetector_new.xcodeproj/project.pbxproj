@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DE1FC3622929EC1009BCA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1FC3522929EC1009BCA47 /* AppDelegate.swift */; };
-		1DE1FC3822929EC1009BCA47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1FC3722929EC1009BCA47 /* ViewController.swift */; };
-		1DE1FC3D22929EC2009BCA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC3C22929EC2009BCA47 /* Assets.xcassets */; };
-		1DE1FC4022929EC2009BCA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC3E22929EC2009BCA47 /* LaunchScreen.storyboard */; };
-		1DE1FC4A22929EFD009BCA47 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1FC4722929EFD009BCA47 /* GoogLeNetPlaces.mlmodel */; };
-		1DE1FC4B22929EFD009BCA47 /* hogwarts_express.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC4822929EFD009BCA47 /* hogwarts_express.jpg */; };
-		1DE1FC4C22929EFD009BCA47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC4922929EFD009BCA47 /* Default-568h@2x.png */; };
-		1DE1FC752292A6C5009BCA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC742292A6C4009BCA47 /* Main.storyboard */; };
+		1DE1FC5A2292A362009BCA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1FC592292A362009BCA47 /* AppDelegate.swift */; };
+		1DE1FC5C2292A362009BCA47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1FC5B2292A362009BCA47 /* ViewController.swift */; };
+		1DE1FC612292A363009BCA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC602292A363009BCA47 /* Assets.xcassets */; };
+		1DE1FC642292A363009BCA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC622292A363009BCA47 /* LaunchScreen.storyboard */; };
+		1DE1FC6E2292A37E009BCA47 /* hogwarts_express.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC6B2292A37E009BCA47 /* hogwarts_express.jpg */; };
+		1DE1FC6F2292A37E009BCA47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1FC6C2292A37E009BCA47 /* Default-568h@2x.png */; };
+		1DE1FC702292A37E009BCA47 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1FC6D2292A37E009BCA47 /* GoogLeNetPlaces.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1DE1FC3222929EC1009BCA47 /* SceneDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DE1FC3522929EC1009BCA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DE1FC3722929EC1009BCA47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1DE1FC3C22929EC2009BCA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1DE1FC3F22929EC2009BCA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1DE1FC4122929EC2009BCA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DE1FC4722929EFD009BCA47 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
-		1DE1FC4822929EFD009BCA47 /* hogwarts_express.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hogwarts_express.jpg; sourceTree = "<group>"; };
-		1DE1FC4922929EFD009BCA47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1DE1FC742292A6C4009BCA47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1DE1FC562292A362009BCA47 /* SceneDetector_new.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneDetector_new.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE1FC592292A362009BCA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DE1FC5B2292A362009BCA47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DE1FC602292A363009BCA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DE1FC632292A363009BCA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DE1FC652292A363009BCA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE1FC6B2292A37E009BCA47 /* hogwarts_express.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hogwarts_express.jpg; path = ../../SceneDetector/SceneDetector/hogwarts_express.jpg; sourceTree = "<group>"; };
+		1DE1FC6C2292A37E009BCA47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../SceneDetector/SceneDetector/Default-568h@2x.png"; sourceTree = "<group>"; };
+		1DE1FC6D2292A37E009BCA47 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = ../../SceneDetector/SceneDetector/GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1DE1FC2F22929EC1009BCA47 /* Frameworks */ = {
+		1DE1FC532292A362009BCA47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DE1FC2922929EC1009BCA47 = {
+		1DE1FC4D2292A362009BCA47 = {
 			isa = PBXGroup;
 			children = (
-				1DE1FC3422929EC1009BCA47 /* SceneDetector */,
-				1DE1FC3322929EC1009BCA47 /* Products */,
+				1DE1FC582292A362009BCA47 /* SceneDetector_new */,
+				1DE1FC572292A362009BCA47 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1DE1FC3322929EC1009BCA47 /* Products */ = {
+		1DE1FC572292A362009BCA47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DE1FC3222929EC1009BCA47 /* SceneDetector.app */,
+				1DE1FC562292A362009BCA47 /* SceneDetector_new.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DE1FC3422929EC1009BCA47 /* SceneDetector */ = {
+		1DE1FC582292A362009BCA47 /* SceneDetector_new */ = {
 			isa = PBXGroup;
 			children = (
-				1DE1FC3522929EC1009BCA47 /* AppDelegate.swift */,
-				1DE1FC3722929EC1009BCA47 /* ViewController.swift */,
-				1DE1FC3C22929EC2009BCA47 /* Assets.xcassets */,
-				1DE1FC3E22929EC2009BCA47 /* LaunchScreen.storyboard */,
-				1DE1FC4122929EC2009BCA47 /* Info.plist */,
-				1DE1FC4922929EFD009BCA47 /* Default-568h@2x.png */,
-				1DE1FC4722929EFD009BCA47 /* GoogLeNetPlaces.mlmodel */,
-				1DE1FC4822929EFD009BCA47 /* hogwarts_express.jpg */,
-				1DE1FC742292A6C4009BCA47 /* Main.storyboard */,
+				1DE1FC6C2292A37E009BCA47 /* Default-568h@2x.png */,
+				1DE1FC6D2292A37E009BCA47 /* GoogLeNetPlaces.mlmodel */,
+				1DE1FC6B2292A37E009BCA47 /* hogwarts_express.jpg */,
+				1DE1FC592292A362009BCA47 /* AppDelegate.swift */,
+				1DE1FC5B2292A362009BCA47 /* ViewController.swift */,
+				1DE1FC602292A363009BCA47 /* Assets.xcassets */,
+				1DE1FC622292A363009BCA47 /* LaunchScreen.storyboard */,
+				1DE1FC652292A363009BCA47 /* Info.plist */,
 			);
-			path = SceneDetector;
+			path = SceneDetector_new;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1DE1FC3122929EC1009BCA47 /* SceneDetector */ = {
+		1DE1FC552292A362009BCA47 /* SceneDetector_new */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DE1FC4422929EC2009BCA47 /* Build configuration list for PBXNativeTarget "SceneDetector" */;
+			buildConfigurationList = 1DE1FC682292A363009BCA47 /* Build configuration list for PBXNativeTarget "SceneDetector_new" */;
 			buildPhases = (
-				1DE1FC2E22929EC1009BCA47 /* Sources */,
-				1DE1FC2F22929EC1009BCA47 /* Frameworks */,
-				1DE1FC3022929EC1009BCA47 /* Resources */,
+				1DE1FC522292A362009BCA47 /* Sources */,
+				1DE1FC532292A362009BCA47 /* Frameworks */,
+				1DE1FC542292A362009BCA47 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SceneDetector;
-			productName = SceneDetector;
-			productReference = 1DE1FC3222929EC1009BCA47 /* SceneDetector.app */;
+			name = SceneDetector_new;
+			productName = SceneDetector_new;
+			productReference = 1DE1FC562292A362009BCA47 /* SceneDetector_new.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1DE1FC2A22929EC1009BCA47 /* Project object */ = {
+		1DE1FC4E2292A362009BCA47 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Seoyoung;
 				TargetAttributes = {
-					1DE1FC3122929EC1009BCA47 = {
+					1DE1FC552292A362009BCA47 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 1DE1FC2D22929EC1009BCA47 /* Build configuration list for PBXProject "SceneDetector" */;
+			buildConfigurationList = 1DE1FC512292A362009BCA47 /* Build configuration list for PBXProject "SceneDetector_new" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,49 +113,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 1DE1FC2922929EC1009BCA47;
-			productRefGroup = 1DE1FC3322929EC1009BCA47 /* Products */;
+			mainGroup = 1DE1FC4D2292A362009BCA47;
+			productRefGroup = 1DE1FC572292A362009BCA47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1DE1FC3122929EC1009BCA47 /* SceneDetector */,
+				1DE1FC552292A362009BCA47 /* SceneDetector_new */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1DE1FC3022929EC1009BCA47 /* Resources */ = {
+		1DE1FC542292A362009BCA47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE1FC4022929EC2009BCA47 /* LaunchScreen.storyboard in Resources */,
-				1DE1FC3D22929EC2009BCA47 /* Assets.xcassets in Resources */,
-				1DE1FC752292A6C5009BCA47 /* Main.storyboard in Resources */,
-				1DE1FC4C22929EFD009BCA47 /* Default-568h@2x.png in Resources */,
-				1DE1FC4B22929EFD009BCA47 /* hogwarts_express.jpg in Resources */,
+				1DE1FC642292A363009BCA47 /* LaunchScreen.storyboard in Resources */,
+				1DE1FC612292A363009BCA47 /* Assets.xcassets in Resources */,
+				1DE1FC6F2292A37E009BCA47 /* Default-568h@2x.png in Resources */,
+				1DE1FC6E2292A37E009BCA47 /* hogwarts_express.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DE1FC2E22929EC1009BCA47 /* Sources */ = {
+		1DE1FC522292A362009BCA47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE1FC3822929EC1009BCA47 /* ViewController.swift in Sources */,
-				1DE1FC3622929EC1009BCA47 /* AppDelegate.swift in Sources */,
-				1DE1FC4A22929EFD009BCA47 /* GoogLeNetPlaces.mlmodel in Sources */,
+				1DE1FC5C2292A362009BCA47 /* ViewController.swift in Sources */,
+				1DE1FC5A2292A362009BCA47 /* AppDelegate.swift in Sources */,
+				1DE1FC702292A37E009BCA47 /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1DE1FC3E22929EC2009BCA47 /* LaunchScreen.storyboard */ = {
+		1DE1FC622292A363009BCA47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1DE1FC3F22929EC2009BCA47 /* Base */,
+				1DE1FC632292A363009BCA47 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DE1FC4222929EC2009BCA47 /* Debug */ = {
+		1DE1FC662292A363009BCA47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		1DE1FC4322929EC2009BCA47 /* Release */ = {
+		1DE1FC672292A363009BCA47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,36 +278,36 @@
 			};
 			name = Release;
 		};
-		1DE1FC4522929EC2009BCA47 /* Debug */ = {
+		1DE1FC692292A363009BCA47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SceneDetector/Info.plist;
+				INFOPLIST_FILE = SceneDetector_new/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seoyoung.SceneDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seoyoung.SceneDetector-new";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1DE1FC4622929EC2009BCA47 /* Release */ = {
+		1DE1FC6A2292A363009BCA47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SceneDetector/Info.plist;
+				INFOPLIST_FILE = SceneDetector_new/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seoyoung.SceneDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seoyoung.SceneDetector-new";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DE1FC2D22929EC1009BCA47 /* Build configuration list for PBXProject "SceneDetector" */ = {
+		1DE1FC512292A362009BCA47 /* Build configuration list for PBXProject "SceneDetector_new" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DE1FC4222929EC2009BCA47 /* Debug */,
-				1DE1FC4322929EC2009BCA47 /* Release */,
+				1DE1FC662292A363009BCA47 /* Debug */,
+				1DE1FC672292A363009BCA47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DE1FC4422929EC2009BCA47 /* Build configuration list for PBXNativeTarget "SceneDetector" */ = {
+		1DE1FC682292A363009BCA47 /* Build configuration list for PBXNativeTarget "SceneDetector_new" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DE1FC4522929EC2009BCA47 /* Debug */,
-				1DE1FC4622929EC2009BCA47 /* Release */,
+				1DE1FC692292A363009BCA47 /* Debug */,
+				1DE1FC6A2292A363009BCA47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1DE1FC2A22929EC1009BCA47 /* Project object */;
+	rootObject = 1DE1FC4E2292A362009BCA47 /* Project object */;
 }

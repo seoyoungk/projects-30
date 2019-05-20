@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9w-rT-aO4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9w-rT-aO4">
                                 <rect key="frame" x="0.0" y="33" width="414" height="550"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="550" id="lXR-e5-MqT"/>
@@ -30,11 +30,11 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="pick another image"/>
                                 <connections>
-                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2UV-aX-6Dd"/>
+                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PtP-zo-coh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnO-ox-Zjq">
-                                <rect key="frame" x="207" y="618" width="0.0" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnO-ox-Zjq">
+                                <rect key="frame" x="68" y="618" width="279" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="K4q-tM-hTH"/>
                                 </constraints>
@@ -56,8 +56,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="KnO-ox-Zjq" id="KPp-h4-Y5Y"/>
-                        <outlet property="scene" destination="K9w-rT-aO4" id="KC4-Yn-Z9D"/>
+                        <outlet property="answerLabel" destination="KnO-ox-Zjq" id="HoJ-fl-Urw"/>
+                        <outlet property="scene" destination="K9w-rT-aO4" id="a36-pl-q3W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
