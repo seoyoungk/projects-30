@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwU-9u-RKO">
+                                <rect key="frame" x="96" y="70" width="222" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="769-cg-c1d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A handy app to remind you to do your Swift Coding!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvE-Si-XRs">
+                                <rect key="frame" x="35" y="113" width="344" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12.5"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Li-dO-aZ8">
+                                <rect key="frame" x="0.0" y="610" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="580027267.77590203">
+                                    <!--2019-05-20 06:41:07 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerDidSelectNewDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="zAC-KV-taq"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will remind you at" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-dH-NVu">
+                                <rect key="frame" x="134.5" y="552" width="145.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XwU-9u-RKO" secondAttribute="trailing" constant="96" id="5Gg-xr-VJD"/>
+                            <constraint firstItem="XwU-9u-RKO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="7i0-PK-zvr"/>
+                            <constraint firstItem="uvE-Si-XRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="A9M-rv-FOV"/>
+                            <constraint firstItem="6Li-dO-aZ8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M4E-oh-GKh"/>
+                            <constraint firstItem="6Li-dO-aZ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nu6-W3-ZPV"/>
+                            <constraint firstAttribute="bottom" secondItem="6Li-dO-aZ8" secondAttribute="bottom" constant="70" id="QoO-Hb-CGe"/>
+                            <constraint firstItem="uvE-Si-XRs" firstAttribute="top" secondItem="XwU-9u-RKO" secondAttribute="bottom" constant="3" id="ZUs-Eg-sFU"/>
+                            <constraint firstItem="XwU-9u-RKO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="bBg-ye-kjQ"/>
+                            <constraint firstItem="6Li-dO-aZ8" firstAttribute="top" secondItem="2eM-dH-NVu" secondAttribute="bottom" constant="40" id="jKF-ed-3yb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uvE-Si-XRs" secondAttribute="trailing" constant="35" id="nef-l8-St2"/>
+                            <constraint firstItem="2eM-dH-NVu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vhk-Yt-kao"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
