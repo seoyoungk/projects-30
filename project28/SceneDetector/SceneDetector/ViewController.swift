@@ -36,6 +36,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // didFinishPickingMediaWithInfo info: [String : Any] 에서 String을 UIImagePickerController.InfoKey로 설정
         dismiss(animated: true)
         
         guard let image = info[.originalImage] as? UIImage else {
