@@ -8,7 +8,7 @@
 
 import UIKit
 import Vision
-
+import CoreML
 
 class ViewController: UIViewController {
     @IBOutlet weak var scene: UIImageView!
@@ -46,8 +46,44 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
         picker.dismiss(animated: false){ () in
             let image = info[.editedImage] as? UIImage
             self.scene.image = image
+            let ciImage = CIImage(image: image!)
+            self.detectScene(image: ciImage!)
         }
     }
-
+    
+    func detectScene(image: CIImage){
+        answerLabel.text = "Detecting image ..."
+        
+        guard let model = try? VNCoreMLModel(for: GoogLeNetPlaces().model) else {
+            fatalError("can't load GooLeNetPlaces model")
+        }
+        
+        let request = VNCoreMLRequest(model: model) { [weak self] request, error in
+            guard let results = request.results as? [VNClassificationObservation],
+                let topResult = results.first else {
+                    fatalError("unexpected result type from VNCoreMLRequest")
+            }
+            
+            DispatchQueue.main.async { [weak self] in
+                self?.answerLabel.text = "\(topResult.identifier)"
+            }
+            
+        }
+        let handler = VNImageRequestHandler(ciImage: image)
+        DispatchQueue.global(qos: .userInteractive).async {
+            do {
+                try handler.perform([request])
+            } catch {
+                print(error)
+            }
+        }
+        
+    }
     
 }
+
+//let article = (["a", "e", "i", "o", "u"].contains(topResult.identifier.first!)) ? "an" : "a"
+//
+//DispatchQueue.main.async { [weak self] in
+//    self?.answerLabel.text = "\(Int(topResult.confidence * 100))% it's \(article) \(topResult.identifier)"
+//}
