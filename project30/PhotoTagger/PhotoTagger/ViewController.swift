@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
         imageView.image = nil
     }
-    @IBAction func takePicture(_ sender: Any) {
+    @IBAction func takePicture(_ sender: UIButton) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = false

@@ -21,14 +21,14 @@ class TagColorsViewController: UIViewController {
         setupTableData()
     }
     
-    @IBAction func tagsColorsSegmentedControlChanged(_ sender: Any) {
+    @IBAction func tagsColorsSegmentedControlChanged(_ sender: UISegmentedControl) {
         setupTableData()
     }
     
     func setupTableData() {
         if segmentedControl.selectedSegmentIndex == 0 {
             if let tags = tags {
-                tableViewController?.data = tags.map {
+                tableViewController.data = tags.map {
                     TagColorTableData(label: $0, color: nil)
                 }
             } else {
@@ -36,15 +36,15 @@ class TagColorsViewController: UIViewController {
             }
         } else {
             if let colors = colors {
-                tableViewController?.data = colors.map({ (photoColor: PhotoColor) -> TagColorTableData in
+                tableViewController.data = colors.map({ (photoColor: PhotoColor) -> TagColorTableData in
                     let uicolor = UIColor(red: CGFloat(photoColor.red!) / 255, green: CGFloat(photoColor.green!) / 255, blue: CGFloat(photoColor.blue!) / 255, alpha: 1.0)
                     return TagColorTableData(label: photoColor.colorName!, color: uicolor)
                 })
             } else {
-                tableViewController?.data = [TagColorTableData(label: "No colors were fetched.", color: nil)]
+                tableViewController.data = [TagColorTableData(label: "No colors were fetched.", color: nil)]
             }
         }
-        tableViewController?.tableView.reloadData()
+        tableViewController.tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,6 +52,7 @@ class TagColorsViewController: UIViewController {
             guard let controller = segue.destination as? TagColorsTableViewController else {
                 fatalError("Storyboard mis-configuration.")
             }
+            tableViewController = controller
         }
     }
     
