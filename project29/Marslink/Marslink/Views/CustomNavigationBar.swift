@@ -11,19 +11,19 @@ import UIKit
 class CustomNavigationBar: UINavigationBar {
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.clear
+        label.backgroundColor = .clear
         label.text = "MARSLINK"
         label.font = AppFont()
         label.textAlignment = .center
-        label.textColor = UIColor.white
+        label.textColor = .white
         return label
     }()
     
     let statusLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.clear
+        label.backgroundColor = .clear
         label.text = "RECEIVING"
-        label.font = AppFont(size: 14)
+        label.font = AppFont(size: 13)
         label.textAlignment = .center
         label.textColor = UIColor(hex6: 0x42c84b)
         label.sizeToFit()
@@ -31,13 +31,13 @@ class CustomNavigationBar: UINavigationBar {
     }()
     
     let statusIndicator: CAShapeLayer = {
-       let layer = CAShapeLayer()
+        let layer = CAShapeLayer()
         layer.strokeColor = UIColor.white.cgColor
         layer.lineWidth = 1
         layer.fillColor = UIColor.black.cgColor
         let size: CGFloat = 8
         let frame = CGRect(x: 0, y: 0, width: size, height: size)
-        layer.path = UIBezierPath(roundedRect: frame, cornerRadius: size/2).cgPath
+        layer.path = UIBezierPath(roundedRect: frame, cornerRadius: size / 2).cgPath
         layer.frame = frame
         return layer
     }()
@@ -48,13 +48,15 @@ class CustomNavigationBar: UINavigationBar {
         return layer
     }()
     
+    var statusOn = false
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         layer.addSublayer(highlightLayer)
         layer.addSublayer(statusIndicator)
         addSubview(titleLabel)
         addSubview(statusLabel)
-        barTintColor = UIColor.black
+        barTintColor = .black
         updateStatus()
     }
     
@@ -64,7 +66,6 @@ class CustomNavigationBar: UINavigationBar {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         let titleWidth: CGFloat = 130
         let borderHeight: CGFloat = 4
         
@@ -76,7 +77,6 @@ class CustomNavigationBar: UINavigationBar {
         path.addLine(to: CGPoint(x: bounds.width, y: bounds.height))
         path.addLine(to: CGPoint(x: 0, y: bounds.height))
         path.close()
-        
         highlightLayer.path = path.cgPath
         
         titleLabel.frame = CGRect(x: 0, y: 0, width: titleWidth, height: bounds.height)
@@ -89,10 +89,8 @@ class CustomNavigationBar: UINavigationBar {
         statusIndicator.position = CGPoint(x: statusLabel.center.x - 50, y: statusLabel.center.y - 1)
     }
     
-    var statusOn = false
-    
     func updateStatus() {
-        statusOn = !statusOn
+        statusOn.toggle()
         CATransaction.begin()
         CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
         statusIndicator.fillColor = (statusOn ? UIColor.white : UIColor.black).cgColor
@@ -101,4 +99,5 @@ class CustomNavigationBar: UINavigationBar {
             self.updateStatus()
         }
     }
+    
 }

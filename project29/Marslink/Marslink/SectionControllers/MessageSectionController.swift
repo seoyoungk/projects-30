@@ -6,12 +6,10 @@
 //  Copyright © 2019 Seoyoung. All rights reserved.
 //
 
-import UIKit
 import IGListKit
 
-class MessageSectionController: IGListSectionController {
-    fileprivate let solFormatter = SolFormatter()
-    fileprivate var message: Message!
+class MessageSectionController: ListSectionController {
+    var message: Message!
     
     override init() {
         super.init()
@@ -19,33 +17,33 @@ class MessageSectionController: IGListSectionController {
     }
 }
 
-
-
-extension MessageSectionController: IGListSectionType {
-    func numberOfItems() -> Int {
+// MARK: - Data Provider
+extension MessageSectionController {
+    override func numberOfItems() -> Int {
         return 1
     }
     
-    func sizeForItem(at index: Int) -> CGSize {
-        guard let context = collectionContext, let message = message else {
-            return .zero
+    override func sizeForItem(at index: Int) -> CGSize {
+        guard
+            let context = collectionContext,
+            let message = message
+            else {
+                return .zero
         }
-        let width = context.containerSize.width
-        return MessageCell.cellSize(width: width, text: message.text)
+        return MessageCell.cellSize(width: context.containerSize.width, text: message.text)
     }
     
-    func cellForItem(at index: Int) -> UICollectionViewCell {
-        let cell = collectionContext!.dequeueReusableCell(of: MessageCell.self, for: self, at: index) as! MessageCell
-        cell.titleLabel.text = message.user.name.uppercased()
+    override func cellForItem(at index: Int) -> UICollectionViewCell {
+        let cell = collectionContext?.dequeueReusableCell(of: MessageCell.self, for: self, at: index) as! MessageCell
         cell.messageLabel.text = message.text
+        cell.titleLabel.text = message.user.name.uppercased()
         
         return cell
     }
     
-    func didUpdate(to object: Any) {
+    override func didUpdate(to object: Any) {
         message = object as? Message
     }
-    func didSelectItem(at index: Int) {}
 }
 
 
