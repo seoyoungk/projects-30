@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DA1E47D2293D78D00FE1752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E47C2293D78D00FE1752 /* AppDelegate.swift */; };
+		1DA1E47F2293D78D00FE1752 /* ClassicFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E47E2293D78D00FE1752 /* ClassicFeedController.swift */; };
+		1DA1E4822293D78D00FE1752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1E4802293D78D00FE1752 /* Main.storyboard */; };
+		1DA1E4842293D78F00FE1752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1E4832293D78F00FE1752 /* Assets.xcassets */; };
+		1DA1E4872293D78F00FE1752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1E4852293D78F00FE1752 /* LaunchScreen.storyboard */; };
+		1DA1E4902293D8B200FE1752 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E48F2293D8B200FE1752 /* DateSortable.swift */; };
+		1DA1E4922293D8EC00FE1752 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4912293D8EC00FE1752 /* JournalEntry.swift */; };
+		1DA1E4942293D93000FE1752 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4932293D93000FE1752 /* Message.swift */; };
+		1DA1E4962293D95A00FE1752 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4952293D95A00FE1752 /* User.swift */; };
+		1DA1E4982293D99000FE1752 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4972293D99000FE1752 /* Weather.swift */; };
+		1DA1E49A2293DBD800FE1752 /* SolFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4992293DBD800FE1752 /* SolFormatter.swift */; };
+		1DA1E49C2293DCBA00FE1752 /* NSObject+IGList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E49B2293DCBA00FE1752 /* NSObject+IGList.swift */; };
+		1DA1E4A02293E14000FE1752 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1E49F2293E14000FE1752 /* OCRAStd.otf */; };
+		1DA1E4A32293E1C600FE1752 /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4A22293E1C600FE1752 /* JournalSectionController.swift */; };
+		1DA1E4A52293E1EE00FE1752 /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4A42293E1EE00FE1752 /* MessageSectionController.swift */; };
+		1DA1E4A72293E21300FE1752 /* WeatherSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4A62293E21300FE1752 /* WeatherSectionController.swift */; };
+		1DA1E4AA2293E3E800FE1752 /* JournalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4A92293E3E800FE1752 /* JournalLoader.swift */; };
+		1DA1E4AC2293E41300FE1752 /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4AB2293E41300FE1752 /* PathFinder.swift */; };
+		1DA1E4AE2293E43F00FE1752 /* TestSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4AD2293E43F00FE1752 /* TestSize.swift */; };
+		1DA1E4B02293E47D00FE1752 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4AF2293E47D00FE1752 /* Theme.swift */; };
+		1DA1E4B22293E4AD00FE1752 /* WxScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4B12293E4AD00FE1752 /* WxScanner.swift */; };
+		1DA1E4B52293E6F600FE1752 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4B42293E6F600FE1752 /* FeedViewController.swift */; };
+		1DA1E4B82293ECE000FE1752 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4B72293ECE000FE1752 /* CustomNavigationBar.swift */; };
+		1DA1E4BA2293EE7500FE1752 /* JournalEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4B92293EE7500FE1752 /* JournalEntryCell.swift */; };
+		1DA1E4BC2293EF3B00FE1752 /* JournalEntryDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4BB2293EF3B00FE1752 /* JournalEntryDataCell.swift */; };
+		1DA1E4BE2293EFA200FE1752 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4BD2293EFA200FE1752 /* MessageCell.swift */; };
+		1DA1E4C02293EFF100FE1752 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4BF2293EFF100FE1752 /* WeatherDetailCell.swift */; };
+		1DA1E4C22293F01100FE1752 /* WeatherSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1E4C12293F01100FE1752 /* WeatherSummaryCell.swift */; };
+		EDD05891E59C1377C475F2C2 /* Pods_Marslink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7801F2017B46CD71CE4B96 /* Pods_Marslink.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DA1E4792293D78D00FE1752 /* Marslink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marslink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA1E47C2293D78D00FE1752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DA1E47E2293D78D00FE1752 /* ClassicFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFeedController.swift; sourceTree = "<group>"; };
+		1DA1E4812293D78D00FE1752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DA1E4832293D78F00FE1752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DA1E4862293D78F00FE1752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DA1E4882293D78F00FE1752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA1E48F2293D8B200FE1752 /* DateSortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
+		1DA1E4912293D8EC00FE1752 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		1DA1E4932293D93000FE1752 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1DA1E4952293D95A00FE1752 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1DA1E4972293D99000FE1752 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1DA1E4992293DBD800FE1752 /* SolFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolFormatter.swift; sourceTree = "<group>"; };
+		1DA1E49B2293DCBA00FE1752 /* NSObject+IGList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+IGList.swift"; sourceTree = "<group>"; };
+		1DA1E49F2293E14000FE1752 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
+		1DA1E4A22293E1C600FE1752 /* JournalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
+		1DA1E4A42293E1EE00FE1752 /* MessageSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
+		1DA1E4A62293E21300FE1752 /* WeatherSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSectionController.swift; sourceTree = "<group>"; };
+		1DA1E4A92293E3E800FE1752 /* JournalLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalLoader.swift; sourceTree = "<group>"; };
+		1DA1E4AB2293E41300FE1752 /* PathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFinder.swift; sourceTree = "<group>"; };
+		1DA1E4AD2293E43F00FE1752 /* TestSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSize.swift; sourceTree = "<group>"; };
+		1DA1E4AF2293E47D00FE1752 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1DA1E4B12293E4AD00FE1752 /* WxScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxScanner.swift; sourceTree = "<group>"; };
+		1DA1E4B42293E6F600FE1752 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		1DA1E4B72293ECE000FE1752 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		1DA1E4B92293EE7500FE1752 /* JournalEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryCell.swift; sourceTree = "<group>"; };
+		1DA1E4BB2293EF3B00FE1752 /* JournalEntryDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDataCell.swift; sourceTree = "<group>"; };
+		1DA1E4BD2293EFA200FE1752 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		1DA1E4BF2293EFF100FE1752 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
+		1DA1E4C12293F01100FE1752 /* WeatherSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSummaryCell.swift; sourceTree = "<group>"; };
+		4BAAA6EBAD5D6221F379E335 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
+		984BAEFA2D2628BB167C8FDC /* Pods-Marslink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.release.xcconfig"; path = "Target Support Files/Pods-Marslink/Pods-Marslink.release.xcconfig"; sourceTree = "<group>"; };
+		9D7801F2017B46CD71CE4B96 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DA1E4762293D78D00FE1752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD05891E59C1377C475F2C2 /* Pods_Marslink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16ECDB28E4B6479BC2C735D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BAAA6EBAD5D6221F379E335 /* Pods-Marslink.debug.xcconfig */,
+				984BAEFA2D2628BB167C8FDC /* Pods-Marslink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1DA1E4702293D78D00FE1752 = {
+			isa = PBXGroup;
+			children = (
+				1DA1E47B2293D78D00FE1752 /* Marslink */,
+				1DA1E47A2293D78D00FE1752 /* Products */,
+				16ECDB28E4B6479BC2C735D9 /* Pods */,
+				D1CD030654CE5E01E8DCDDF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DA1E47A2293D78D00FE1752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E4792293D78D00FE1752 /* Marslink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DA1E47B2293D78D00FE1752 /* Marslink */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E4B62293ECC800FE1752 /* Views */,
+				1DA1E4B32293E6E000FE1752 /* ViewController */,
+				1DA1E4A82293E26800FE1752 /* Systems */,
+				1DA1E4A12293E1AA00FE1752 /* SectionControllers */,
+				1DA1E49F2293E14000FE1752 /* OCRAStd.otf */,
+				1DA1E48E2293D87F00FE1752 /* Models */,
+				1DA1E47C2293D78D00FE1752 /* AppDelegate.swift */,
+				1DA1E4802293D78D00FE1752 /* Main.storyboard */,
+				1DA1E4832293D78F00FE1752 /* Assets.xcassets */,
+				1DA1E4852293D78F00FE1752 /* LaunchScreen.storyboard */,
+				1DA1E4882293D78F00FE1752 /* Info.plist */,
+			);
+			path = Marslink;
+			sourceTree = "<group>";
+		};
+		1DA1E48E2293D87F00FE1752 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E48F2293D8B200FE1752 /* DateSortable.swift */,
+				1DA1E4912293D8EC00FE1752 /* JournalEntry.swift */,
+				1DA1E4932293D93000FE1752 /* Message.swift */,
+				1DA1E4952293D95A00FE1752 /* User.swift */,
+				1DA1E4972293D99000FE1752 /* Weather.swift */,
+				1DA1E4992293DBD800FE1752 /* SolFormatter.swift */,
+				1DA1E49B2293DCBA00FE1752 /* NSObject+IGList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DA1E4A12293E1AA00FE1752 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E4A22293E1C600FE1752 /* JournalSectionController.swift */,
+				1DA1E4A42293E1EE00FE1752 /* MessageSectionController.swift */,
+				1DA1E4A62293E21300FE1752 /* WeatherSectionController.swift */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		1DA1E4A82293E26800FE1752 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E4A92293E3E800FE1752 /* JournalLoader.swift */,
+				1DA1E4AB2293E41300FE1752 /* PathFinder.swift */,
+				1DA1E4AD2293E43F00FE1752 /* TestSize.swift */,
+				1DA1E4AF2293E47D00FE1752 /* Theme.swift */,
+				1DA1E4B12293E4AD00FE1752 /* WxScanner.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		1DA1E4B32293E6E000FE1752 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E47E2293D78D00FE1752 /* ClassicFeedController.swift */,
+				1DA1E4B42293E6F600FE1752 /* FeedViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1DA1E4B62293ECC800FE1752 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1E4B72293ECE000FE1752 /* CustomNavigationBar.swift */,
+				1DA1E4B92293EE7500FE1752 /* JournalEntryCell.swift */,
+				1DA1E4BB2293EF3B00FE1752 /* JournalEntryDataCell.swift */,
+				1DA1E4BD2293EFA200FE1752 /* MessageCell.swift */,
+				1DA1E4BF2293EFF100FE1752 /* WeatherDetailCell.swift */,
+				1DA1E4C12293F01100FE1752 /* WeatherSummaryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1CD030654CE5E01E8DCDDF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D7801F2017B46CD71CE4B96 /* Pods_Marslink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DA1E4782293D78D00FE1752 /* Marslink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DA1E48B2293D78F00FE1752 /* Build configuration list for PBXNativeTarget "Marslink" */;
+			buildPhases = (
+				8D958200A691AB50B4618833 /* [CP] Check Pods Manifest.lock */,
+				1DA1E4752293D78D00FE1752 /* Sources */,
+				1DA1E4762293D78D00FE1752 /* Frameworks */,
+				1DA1E4772293D78D00FE1752 /* Resources */,
+				8965F033AE70DB5E6F4B6629 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marslink;
+			productName = Marslink;
+			productReference = 1DA1E4792293D78D00FE1752 /* Marslink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DA1E4712293D78D00FE1752 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Seoyoung;
+				TargetAttributes = {
+					1DA1E4782293D78D00FE1752 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1DA1E4742293D78D00FE1752 /* Build configuration list for PBXProject "Marslink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DA1E4702293D78D00FE1752;
+			productRefGroup = 1DA1E47A2293D78D00FE1752 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DA1E4782293D78D00FE1752 /* Marslink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DA1E4772293D78D00FE1752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA1E4872293D78F00FE1752 /* LaunchScreen.storyboard in Resources */,
+				1DA1E4842293D78F00FE1752 /* Assets.xcassets in Resources */,
+				1DA1E4A02293E14000FE1752 /* OCRAStd.otf in Resources */,
+				1DA1E4822293D78D00FE1752 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8965F033AE70DB5E6F4B6629 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marslink/Pods-Marslink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marslink/Pods-Marslink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D958200A691AB50B4618833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marslink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DA1E4752293D78D00FE1752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA1E4AC2293E41300FE1752 /* PathFinder.swift in Sources */,
+				1DA1E4902293D8B200FE1752 /* DateSortable.swift in Sources */,
+				1DA1E4B22293E4AD00FE1752 /* WxScanner.swift in Sources */,
+				1DA1E47F2293D78D00FE1752 /* ClassicFeedController.swift in Sources */,
+				1DA1E4962293D95A00FE1752 /* User.swift in Sources */,
+				1DA1E4A32293E1C600FE1752 /* JournalSectionController.swift in Sources */,
+				1DA1E4BA2293EE7500FE1752 /* JournalEntryCell.swift in Sources */,
+				1DA1E4942293D93000FE1752 /* Message.swift in Sources */,
+				1DA1E4BC2293EF3B00FE1752 /* JournalEntryDataCell.swift in Sources */,
+				1DA1E4C22293F01100FE1752 /* WeatherSummaryCell.swift in Sources */,
+				1DA1E4922293D8EC00FE1752 /* JournalEntry.swift in Sources */,
+				1DA1E4C02293EFF100FE1752 /* WeatherDetailCell.swift in Sources */,
+				1DA1E4A72293E21300FE1752 /* WeatherSectionController.swift in Sources */,
+				1DA1E4BE2293EFA200FE1752 /* MessageCell.swift in Sources */,
+				1DA1E4AE2293E43F00FE1752 /* TestSize.swift in Sources */,
+				1DA1E4B52293E6F600FE1752 /* FeedViewController.swift in Sources */,
+				1DA1E4B02293E47D00FE1752 /* Theme.swift in Sources */,
+				1DA1E49C2293DCBA00FE1752 /* NSObject+IGList.swift in Sources */,
+				1DA1E47D2293D78D00FE1752 /* AppDelegate.swift in Sources */,
+				1DA1E4A52293E1EE00FE1752 /* MessageSectionController.swift in Sources */,
+				1DA1E4B82293ECE000FE1752 /* CustomNavigationBar.swift in Sources */,
+				1DA1E4982293D99000FE1752 /* Weather.swift in Sources */,
+				1DA1E49A2293DBD800FE1752 /* SolFormatter.swift in Sources */,
+				1DA1E4AA2293E3E800FE1752 /* JournalLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DA1E4802293D78D00FE1752 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DA1E4812293D78D00FE1752 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DA1E4852293D78F00FE1752 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DA1E4862293D78F00FE1752 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DA1E4892293D78F00FE1752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DA1E48A2293D78F00FE1752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DA1E48C2293D78F00FE1752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BAAA6EBAD5D6221F379E335 /* Pods-Marslink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Marslink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seoyoung.Marslink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DA1E48D2293D78F00FE1752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 984BAEFA2D2628BB167C8FDC /* Pods-Marslink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Marslink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seoyoung.Marslink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DA1E4742293D78D00FE1752 /* Build configuration list for PBXProject "Marslink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA1E4892293D78F00FE1752 /* Debug */,
+				1DA1E48A2293D78F00FE1752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DA1E48B2293D78F00FE1752 /* Build configuration list for PBXNativeTarget "Marslink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA1E48C2293D78F00FE1752 /* Debug */,
+				1DA1E48D2293D78F00FE1752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DA1E4712293D78D00FE1752 /* Project object */;
+}

@@ -1,0 +1,26 @@
+PODS:
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+
+DEPENDENCIES:
+  - IGListKit (from `https://github.com/Instagram/IGListKit.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  IGListKit:
+    :branch: master
+    :git: https://github.com/Instagram/IGListKit.git
+
+CHECKOUT OPTIONS:
+  IGListKit:
+    :commit: 05e680f1cb6397249ccc167465dd2bb20e8976e6
+    :git: https://github.com/Instagram/IGListKit.git
+
+SPEC CHECKSUMS:
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+
+PODFILE CHECKSUM: ddc288b344ce37b7acfa96cddad85629f8db46ef
+
+COCOAPODS: 1.6.2
